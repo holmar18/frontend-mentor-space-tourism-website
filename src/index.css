@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+:root {
+	--color-black: hsl(230, 35%, 7%);
+	--color-light-blue: hsl(231, 77%, 90%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-nav: rgba(151, 151, 151, 0.5);
+
+	--heading-font: 'Bellefair', serif;
+	--subheading-font: 'Barlow Condensed', sans-serif;
+
+	--subheading-one-size: 1.75rem;
+
+	--subheading-two-size: 0.875rem;
+	--subheading-two-letter-space: 2.35px;
+
+	--nav-text-size: 1rem;
+	--nav-letter-spacing: 2.7px;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	height: 100vh;
+	font-family: var(--subheading-font);
+	color: var(--color-white);
+}
+
+p {
+	color: var(--color-light-blue);
+}
+
+h1 {
+	font-family: var(--heading-font);
+	font-size: 9.375rem;
+	color: var(--color-white);
+	margin: 0;
+}
+
+h2 {
+	font-family: var(--heading-font);
+	font-size: 6.25rem;
+	color: var(--color-white);
+	margin: 0;
+}
+
+h3 {
+	font-family: var(--heading-font);
+	font-size: 3.5rem;
+	color: var(--color-white);
+	margin: 0;
+}
+
+h4 {
+	font-family: var(--heading-font);
+	font-size: 2rem;
+	margin: 0;
+}
+
+h5 {
+	font-family: var(--subheading-font);
+	font-size: 1.75rem;
+	color: var(--color-light-blue);
+	margin: 0;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}

@@ -1,0 +1,235 @@
+/* MOBILE ANIMATION */
+@-webkit-keyframes slide {
+	100% {
+		right: 0;
+	}
+}
+
+@keyframes slide {
+	100% {
+		right: 0;
+	}
+}
+/* MOBILE ANIMATION - END */
+
+nav {
+	width: 100%;
+	height: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-logo-container {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.links-container {
+	color: var(--color-white);
+	margin-left: auto;
+	background-color: var(--color-nav);
+	height: 100%;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(4px);
+	transition: all 1s ease;
+}
+
+.links-inner-container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	font-family: var(--subheading-font);
+	font-size: var(--nav-text-size);
+	letter-spacing: var(--nav-letter-spacing);
+}
+
+.links-inner-container div {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.links-inner-container b {
+	padding-right: 0.2rem;
+}
+
+.nav-line-container {
+	width: 75%;
+}
+
+.logo-line-container {
+	display: flex;
+}
+
+/*
+########################## MOBILE ##########################
+*/
+@media only screen and (max-width: 640px) {
+	span {
+		display: none;
+	}
+
+	.logo-line-container {
+		margin-right: auto;
+	}
+
+	.mobilemenu-container {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		margin-right: 2.5rem;
+		cursor: pointer;
+	}
+
+	.show-mobile {
+		display: block !important;
+	}
+
+	.links-container {
+		display: none;
+		position: absolute;
+		height: 100vh;
+		right: -60%;
+		width: 60%;
+		-webkit-animation: slide 0.5s forwards;
+		-webkit-animation-delay: 0.3s;
+		animation: slide 0.5s forwards;
+		animation-delay: 0.3s;
+	}
+
+	.links-inner-container div {
+		height: 8%;
+		font-size: 1.3rem;
+		margin-right: auto;
+		margin-left: 2rem;
+	}
+
+	.links-inner-container {
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+	}
+
+	nav {
+		position: absolute;
+		height: 100%;
+		min-width: 375px;
+	}
+
+	.nav-logo-container {
+		position: absolute;
+		top: 1rem;
+	}
+
+	.mobile-close-container {
+		margin-left: auto !important;
+		margin-right: 2rem !important;
+	}
+}
+
+/*
+########################## TABLET ##########################
+*/
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+	.links-container {
+		width: 70%;
+	}
+
+	.logo-line-container {
+		width: 30%;
+		padding-left: 4%;
+	}
+
+	span {
+		display: none;
+	}
+
+	.mobilemenu-container {
+		display: none;
+	}
+
+	.links-inner-container div {
+		height: 100%;
+	}
+
+	.links-inner-container {
+		justify-content: space-between;
+		height: 100%;
+		width: 80%;
+	}
+
+	.links-inner-container div:hover {
+		height: 100%;
+		border-bottom: 3px solid var(--color-nav);
+	}
+
+	.active {
+		border-bottom: 3px solid var(--color-white);
+	}
+
+	.mobile-close-container {
+		display: none !important;
+	}
+}
+
+/*
+########################## DESKTOP ##########################
+*/
+@media only screen and (min-width: 1008px) {
+	.links-container {
+		width: 50%;
+		margin-top: 5%;
+	}
+
+	.logo-line-container {
+		width: 50%;
+		margin-top: 5%;
+	}
+
+	.line {
+		z-index: 1;
+		position: absolute;
+		width: 42%;
+		left: 10%;
+		margin-top: 1.5%;
+		border-bottom: 1.5px solid var(--color-nav);
+		opacity: 0.6;
+	}
+
+	.mobilemenu-container {
+		display: none;
+	}
+
+	.links-inner-container div {
+		height: 100%;
+	}
+
+	.links-inner-container {
+		justify-content: space-between;
+		height: 100%;
+		width: 80%;
+	}
+
+	.links-inner-container div:hover {
+		height: 100%;
+		border-bottom: 3px solid var(--color-nav);
+		transition: all 1s;
+	}
+
+	.active {
+		border-bottom: 3px solid var(--color-white);
+		transition: all 1s ease;
+	}
+
+	.mobile-close-container {
+		display: none !important;
+	}
+}
