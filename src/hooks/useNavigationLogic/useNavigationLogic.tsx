@@ -12,7 +12,7 @@ interface IMobileRet {
 	};
 }
 
-const useNavigationLogic = (): IMobileRet => {
+const useNavigationLogic: Function = (): IMobileRet => {
 	const [toogleMobileMenu, setToggleMobileMenu] = useState<boolean>(false);
 	const [currRoute, setCurrRoute] = useState<string>('');
 	const navigate = useNavigate();

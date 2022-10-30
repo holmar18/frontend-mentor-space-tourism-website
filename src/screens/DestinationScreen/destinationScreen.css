@@ -1,7 +1,109 @@
+@keyframes Fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes Spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 .main-container-dest {
-	width: 100%;
+	max-width: 100%;
+	min-width: 370px;
 	height: 100vh;
 	background-size: cover;
+}
+
+.main-content-container {
+	margin: 0 auto;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navigation {
+	margin: 2rem auto;
+	display: flex;
+	width: 40%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	animation: Fade 1s linear;
+}
+
+.nav-item {
+	height: 2rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	color: var(--color-light-blue);
+	cursor: pointer;
+}
+
+.nav-active {
+	color: var(--color-white);
+	border-bottom: 2px solid var(--color-white);
+	transition: all 0.3s linear;
+}
+
+.pick-dest-container {
+	margin-bottom: 3rem;
+	animation: Fade 1s linear;
+}
+
+.pick-dest-container b {
+	opacity: 0.25;
+}
+
+.description {
+	text-align: center;
+	width: 80%;
+	animation: Fade 1s linear;
+}
+
+.title-desc-container {
+	padding-bottom: 2rem;
+	border-bottom: 1.5px solid var(--color-nav);
+	animation: Fade 1s linear;
+}
+
+.subheading-one {
+	letter-spacing: 2.75px;
+	text-transform: uppercase;
+	animation: Fade 1s linear;
+}
+
+.subheading-two {
+	color: var(--color-white);
+	font-size: var(--subheading-one-size);
+	margin: 0;
+	text-transform: uppercase;
+	animation: Fade 1s linear;
+}
+
+.planet-img {
+	animation: Fade 1s linear, Spin 60s infinite linear;
+}
+
+.title {
+	animation: Fade 1s linear;
+}
+
+.dist-time-item {
+	animation: Fade 1s linear;
 }
 
 /*
@@ -11,6 +113,45 @@
 	.main-container-dest {
 		background-image: url('../../assets/destination/background-destination-mobile.jpg');
 	}
+
+	.main-content-container {
+		padding-top: 15%;
+		width: 80%;
+	}
+
+	.planet-img {
+		width: 16rem;
+		height: 16rem;
+		margin: 0 auto;
+	}
+
+	.pick-dest-container {
+		text-align: center;
+	}
+
+	.pick-dest-container h5 {
+		font-size: 1rem;
+	}
+
+	.title {
+		font-size: 3.5rem;
+	}
+
+	.dist-time-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.dist-time-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.subheading-one {
+		margin-top: 2rem;
+	}
 }
 /*
 ########################## TABLET ##########################
@@ -19,6 +160,44 @@
 	.main-container-dest {
 		background-image: url('../../assets/destination/background-destination-tablet.jpg');
 	}
+
+	.main-content-container {
+		padding-top: 5%;
+		width: 90%;
+	}
+
+	.planet-img {
+		width: 18rem;
+		height: 18rem;
+		margin: 0 auto;
+	}
+
+	.pick-dest-container h5 {
+		font-size: 1.3rem;
+	}
+
+	.title {
+		font-size: 5rem;
+	}
+
+	.description {
+		width: 70%;
+	}
+
+	.dist-time-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.dist-time-item {
+		width: 30%;
+		text-align: center;
+	}
+
+	.subheading-one {
+		margin-top: 1rem;
+	}
 }
 /*
 ########################## DESKTOP ##########################
@@ -26,5 +205,51 @@
 @media only screen and (min-width: 1008px) {
 	.main-container-dest {
 		background-image: url('../../assets/destination/background-destination-desktop.jpg');
+	}
+
+	.main-content-container {
+		display: flex;
+	}
+
+	.main-content-container section {
+		margin-top: 7%;
+	}
+
+	.main-content-container section:nth-child(1) {
+		width: 50%;
+		padding-left: 4rem;
+	}
+
+	.main-content-container section:nth-child(2) {
+		width: 30%;
+		padding-top: 4rem;
+		padding-left: 3rem;
+		padding-right: 8rem;
+	}
+
+	.pick-dest-container {
+		margin-bottom: 6rem;
+	}
+
+	.navigation {
+		margin: 2rem 0 2rem 2rem;
+	}
+
+	.description {
+		width: 100%;
+		text-align: start;
+	}
+
+	.dist-time-container {
+		display: flex;
+	}
+
+	.dist-time-item {
+		width: 50%;
+	}
+
+	.title {
+		font-size: 6.25rem;
+		margin-right: auto;
 	}
 }

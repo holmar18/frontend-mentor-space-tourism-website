@@ -5,7 +5,7 @@ import { NavBar } from '../../components/NavBar';
 // data
 import data from '../../data/data.json';
 
-const HomeScreen: React.FC<{}> = () => {
+const HomeScreen: React.FunctionComponent<{}> = (): JSX.Element => {
 	return (
 		/* Main container */
 		<div className='main-container-home'>
@@ -15,10 +15,10 @@ const HomeScreen: React.FC<{}> = () => {
 				{/* Section text */}
 				<section className='section-one'>
 					<div>
-						<h5>{data.home.smalltitle}</h5>
+						<h5 className='small-title'>{data.home.smalltitle}</h5>
 					</div>
 					<div>
-						<h1>{data.home.title}</h1>
+						<h1 className='big-title'>{data.home.title}</h1>
 					</div>
 					<div>
 						<p>{data.home.description}</p>

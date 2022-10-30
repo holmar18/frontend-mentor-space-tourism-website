@@ -16,7 +16,12 @@ interface INavBarProps {
 	tech?: string;
 }
 
-const NavBar: React.FC<INavBarProps> = ({ home, dest, crew, tech }) => {
+const NavBar: React.FunctionComponent<INavBarProps> = ({
+	home,
+	dest,
+	crew,
+	tech,
+}): JSX.Element => {
 	const { mobile, route } = useNavigationLogic();
 
 	return (

@@ -7,4 +7,13 @@ const nav = {
 	},
 };
 
-export { nav };
+const planetsScreen = {
+	mars: 'MARS',
+	moon: 'MOON',
+	europa: 'EUROPA',
+	titan: 'TITAN',
+	dist: 'AVG. DISTANCE',
+	time: 'EST. TRAVEL TIME',
+};
+
+export { nav, planetsScreen };

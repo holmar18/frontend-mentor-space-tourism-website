@@ -28,6 +28,7 @@ nav {
 }
 
 .links-container {
+	z-index: 1;
 	color: var(--color-white);
 	margin-left: auto;
 	background-color: var(--color-nav);

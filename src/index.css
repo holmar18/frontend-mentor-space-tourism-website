@@ -61,7 +61,7 @@ h4 {
 h5 {
 	font-family: var(--subheading-font);
 	font-size: 1.75rem;
-	color: var(--color-light-blue);
+	letter-spacing: 4.75px;
 	margin: 0;
 }
 
