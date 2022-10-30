@@ -29,6 +29,7 @@
 	background-color: var(--color-white);
 	color: var(--color-black) !important;
 	cursor: pointer;
+	text-align: center;
 }
 
 .outer-circle {
@@ -141,5 +142,10 @@
 
 	.small-title {
 		margin-bottom: 2rem;
+	}
+
+	.circle h4 {
+		margin: 0;
+		padding-left: 0;
 	}
 }

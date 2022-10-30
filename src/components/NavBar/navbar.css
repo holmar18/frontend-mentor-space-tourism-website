@@ -67,6 +67,7 @@ nav {
 
 .logo-line-container {
 	display: flex;
+	z-index: 2;
 }
 
 /*

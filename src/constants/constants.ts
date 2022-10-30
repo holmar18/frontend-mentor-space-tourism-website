@@ -16,4 +16,13 @@ const planetsScreen = {
 	time: 'EST. TRAVEL TIME',
 };
 
-export { nav, planetsScreen };
+const crewScreen = {
+	meetTitle: 'MEET THE CREW',
+};
+
+const techSreen = {
+	title: 'space lunch 101',
+	subheading: 'the terminology',
+};
+
+export { nav, planetsScreen, crewScreen, techSreen };

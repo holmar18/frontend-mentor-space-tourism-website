@@ -1,0 +1,150 @@
+.main-container-tech {
+	max-width: 100%;
+	min-width: 370px;
+	height: 100vh;
+	background-size: cover;
+}
+
+.title-section b {
+	opacity: 0.25;
+}
+
+.title-section h5 {
+	text-transform: uppercase;
+}
+
+.content-container {
+	display: flex;
+}
+
+.text-section h3,
+.subheader {
+	text-transform: uppercase;
+}
+
+.subheader {
+	color: var(--color-light-blue);
+	letter-spacing: 2.35px;
+}
+
+.btn-section {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.btn {
+	z-index: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	border: 1px solid var(--color-nav);
+	text-align: center;
+	margin: 0.7rem;
+	font-family: var(--heading-font);
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+}
+
+.btn-active {
+	color: var(--color-black);
+	background-color: var(--color-white);
+}
+
+.btn:hover {
+	border: 1px solid var(--color-white);
+	transition: border 0.5s ease-in;
+}
+/*
+########################## MOBILE ##########################
+*/
+@media only screen and (max-width: 640px) {
+	.main-container-tech {
+		background-image: url('../../assets/technology/background-technology-mobile.jpg');
+	}
+
+	.content-container {
+		padding-top: 20%;
+		align-items: center;
+	}
+
+	.title-section {
+		margin-bottom: 6%;
+	}
+
+	.title-section h5 {
+		font-size: 1rem;
+		letter-spacing: 2.35px;
+	}
+
+	.text-section {
+		text-align: center;
+	}
+
+	.text-section h3 {
+		font-size: 1.5rem;
+	}
+
+	.tech-description {
+		padding: 1rem 2rem;
+		line-height: 1.9rem;
+	}
+
+	.btn {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.btn-section {
+		height: 3.2rem;
+		margin-bottom: 1.5rem;
+		margin-top: 1.5rem;
+	}
+}
+/*
+######################### TABLET ##########################
+*/
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+	.main-container-tech {
+		background-image: url('../../assets/technology/background-technology-tablet.jpg');
+	}
+
+	.tec-image {
+		width: 100%;
+	}
+
+	.title-section {
+		margin-top: 4%;
+		margin-bottom: 4%;
+		margin-left: 5%;
+	}
+
+	.text-section {
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.btn-section {
+		height: 3.2rem;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+	}
+
+	.tec-image {
+		height: 20rem;
+	}
+}
+/*
+########################## DESKTOP ##########################
+*/
+@media only screen and (min-width: 1008px) {
+	.main-container-tech {
+		background-image: url('../../assets/technology/background-technology-desktop.jpg');
+	}
+}
