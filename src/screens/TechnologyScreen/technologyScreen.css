@@ -1,7 +1,8 @@
 .main-container-tech {
 	max-width: 100%;
-	min-width: 370px;
-	height: 100vh;
+	min-width: 340px;
+	max-height: 100%;
+	min-height: 100vh;
 	background-size: cover;
 }
 
