@@ -55,30 +55,30 @@
 <br>
 <img src="./src/assets/design/or/Desktop-Destination.png"/>
 <br>
-<img src="./src/assets/design/or/Desktop-Crew.jpg"/>
+<img src="./src/assets/design/or/Desktop-Crew.png"/>
 <br>
 <img src="./src/assets/design/or/Desktop-Technology.png"/>
 <br><br>
 
 #### Tablet version
 
-<img src="./src/assets/design/or/Tablet-Home.jpg" />
+<img src="./src/assets/design/or/Tablet-Home.png" />
 <br>
 <img src="./src/assets/design/or/Tablet-Destination.png"/>
 <br>
 <img src="./src/assets/design/or/Tablet-Crew.jpg"/>
 <br>
-<img src="./src/assets/design/or/Tablet-Technology.png"/>
+<img src="./src/assets/design/or/Tablet-Technology.jpg"/>
 <br><br>
 
 #### Mobile version
 
-<img src="./src/assets/design/or/Mobile-Home.jpg" />
+<img src="./src/assets/design/or/Mobile-Home.png" />
 <br>
-<img src="./src/assets/design/or/Mobile-Destination.png"/>
+<img src="./src/assets/design/or/Mobile-Destination.jpg"/>
 <br>
 <img src="./src/assets/design/or/Mobile-Crew.jpg"/>
 <br>
-<img src="./src/assets/design/or/Mobile-Technology.png"/>
+<img src="./src/assets/design/or/Mobile-Technology.jpg"/>
 
 ---
