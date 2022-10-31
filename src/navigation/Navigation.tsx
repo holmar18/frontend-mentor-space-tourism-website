@@ -12,6 +12,7 @@ const Navigation: React.FunctionComponent<INavigationProps> = (props) => {
 	return (
 		<BrowserRouter>
 			<Routes>
+				<Route path='/' element={<HomeScreen />} />
 				<Route path='/home' element={<HomeScreen />} />
 				<Route path='/crew' element={<CrewScreen />} />
 				<Route path='/destination' element={<DestinationScreen />} />
