@@ -29,9 +29,8 @@ const useTechnologyLogic: Function = (): ITechnology => {
 	}, [currRoute]);
 
 	const handleData: Function = (route: string): void => {
-		const ww = window.innerWidth > 1007;
+		const ww: boolean = window.innerWidth > 1007;
 
-		console.log('Window width: ', window.innerWidth);
 		switch (route) {
 			case 'vehicle':
 				setCurrData(data.technology[0]);

@@ -36,7 +36,7 @@ const CrewScreen: React.FunctionComponent = (): JSX.Element => {
 				</section>
 				{/* Information section - END */}
 
-				{/* Dots section .charAt(0) */}
+				{/* Dots section */}
 				<section className='dots-section'>
 					<div className='dots-container'>
 						<span

@@ -1,0 +1,84 @@
+# Frontend Mentor - Space tourism multi-page website
+
+---
+
+### Links
+
+##### [Link to project Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
+
+<!-- prettier-ignore -->
+##### [Link to my solution](https://holmar-space-tourism.netlify.app/)
+
+---
+
+### Screenshots of my solution
+
+#### Desktop version
+
+<img src="./src/assets/design/mine/desktop-home.jpg" />
+<br>
+<img src="./src/assets/design/mine/desktop-dest.jpg"/>
+<br>
+<img src="./src/assets/design/mine/desktop-crew.jpg"/>
+<br>
+<img src="./src/assets/design/mine/desktop-tech.jpg"/>
+<br><br>
+
+#### Tablet version
+
+<img src="./src/assets/design/mine/tablet-home.jpg" />
+<br>
+<img src="./src/assets/design/mine/tablet-dest.jpg"/>
+<br>
+<img src="./src/assets/design/mine/tablet-crew.jpg"/>
+<br>
+<img src="./src/assets/design/mine/tablet-tech.jpg"/>
+<br><br>
+
+#### Mobile version
+
+<img src="./src/assets/design/mine/mobile-home.jpg" />
+<br>
+<img src="./src/assets/design/mine/mobile-dest.jpg"/>
+<br>
+<img src="./src/assets/design/mine/mobile-crew.jpg"/>
+<br>
+<img src="./src/assets/design/mine/mobile-tech.jpg"/>
+
+---
+
+### Screenshots of Frontend mentor's original solution
+
+#### Desktop version
+
+<img src="./src/assets/design/or/Desktop-Home.jpg" />
+<br>
+<img src="./src/assets/design/or/Desktop-Destination.png"/>
+<br>
+<img src="./src/assets/design/or/Desktop-Crew.jpg"/>
+<br>
+<img src="./src/assets/design/or/Desktop-Technology.png"/>
+<br><br>
+
+#### Tablet version
+
+<img src="./src/assets/design/or/Tablet-Home.jpg" />
+<br>
+<img src="./src/assets/design/or/Tablet-Destination.png"/>
+<br>
+<img src="./src/assets/design/or/Tablet-Crew.jpg"/>
+<br>
+<img src="./src/assets/design/or/Tablet-Technology.png"/>
+<br><br>
+
+#### Mobile version
+
+<img src="./src/assets/design/or/Mobile-Home.jpg" />
+<br>
+<img src="./src/assets/design/or/Mobile-Destination.png"/>
+<br>
+<img src="./src/assets/design/or/Mobile-Crew.jpg"/>
+<br>
+<img src="./src/assets/design/or/Mobile-Technology.png"/>
+
+---

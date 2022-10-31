@@ -5,29 +5,30 @@
 	background-size: cover;
 }
 
-.title-section b {
+.content-container-tech {
+	display: flex;
+	animation: Fade 1.5s linear;
+}
+
+.title-section-tech b {
 	opacity: 0.25;
 }
 
-.title-section h5 {
+.title-section-tech h5 {
 	text-transform: uppercase;
 }
 
-.content-container {
-	display: flex;
-}
-
-.text-section h3,
-.subheader {
+.text-section-tech h3,
+.subheader-tech {
 	text-transform: uppercase;
 }
 
-.subheader {
+.subheader-tech {
 	color: var(--color-light-blue);
 	letter-spacing: 2.35px;
 }
 
-.btn-section {
+.btn-section-tech {
 	display: flex;
 	justify-content: center;
 	width: 100%;
@@ -68,25 +69,26 @@
 		background-image: url('../../assets/technology/background-technology-mobile.jpg');
 	}
 
-	.content-container {
+	.content-container-tech {
+		flex-direction: column;
 		padding-top: 20%;
 		align-items: center;
 	}
 
-	.title-section {
+	.title-section-tech {
 		margin-bottom: 6%;
 	}
 
-	.title-section h5 {
+	.title-section-tech h5 {
 		font-size: 1rem;
 		letter-spacing: 2.35px;
 	}
 
-	.text-section {
+	.text-section-tech {
 		text-align: center;
 	}
 
-	.text-section h3 {
+	.text-section-tech h3 {
 		font-size: 1.5rem;
 	}
 
@@ -100,10 +102,14 @@
 		height: 3rem;
 	}
 
-	.btn-section {
+	.btn-section-tech {
 		height: 3.2rem;
 		margin-bottom: 1.5rem;
 		margin-top: 1.5rem;
+	}
+
+	.tec-image {
+		width: 100%;
 	}
 }
 /*
@@ -114,23 +120,27 @@
 		background-image: url('../../assets/technology/background-technology-tablet.jpg');
 	}
 
+	.content-container-tech {
+		flex-direction: column;
+	}
+
 	.tec-image {
 		width: 100%;
 	}
 
-	.title-section {
+	.title-section-tech {
 		margin-top: 4%;
 		margin-bottom: 4%;
 		margin-left: 5%;
 	}
 
-	.text-section {
+	.text-section-tech {
 		width: 50%;
 		margin: 0 auto;
 		text-align: center;
 	}
 
-	.btn-section {
+	.btn-section-tech {
 		height: 3.2rem;
 		margin-bottom: 2rem;
 		margin-top: 1rem;
@@ -139,6 +149,10 @@
 	.tec-image {
 		height: 20rem;
 	}
+
+	.text-section-tech {
+		width: 65%;
+	}
 }
 /*
 ########################## DESKTOP ##########################
@@ -146,5 +160,38 @@
 @media only screen and (min-width: 1008px) {
 	.main-container-tech {
 		background-image: url('../../assets/technology/background-technology-desktop.jpg');
+	}
+
+	.content-container-tech {
+		flex-direction: column;
+		width: 50%;
+		height: 40vh;
+		padding-left: 10%;
+		margin-top: 7%;
+	}
+
+	.btn-section-tech {
+		position: absolute;
+		flex-direction: column;
+		width: 5rem;
+		top: 50%;
+	}
+
+	.text-section-tech {
+		margin-top: 20%;
+	}
+
+	.text-section-tech h3 {
+		margin-left: 20%;
+	}
+
+	.tech-description {
+		font-size: 1.1rem;
+	}
+
+	.image-section-tech {
+		position: absolute;
+		bottom: 7%;
+		right: 0;
 	}
 }
