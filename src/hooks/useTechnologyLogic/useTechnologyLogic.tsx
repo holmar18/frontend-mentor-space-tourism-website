@@ -28,7 +28,12 @@ const useTechnologyLogic: Function = (): ITechnology => {
 		handleData(currRoute);
 	}, [currRoute]);
 
+	/**
+	 * Changes displayed data
+	 * @param route options [vehicle, capsule, spaceport]
+	 */
 	const handleData: Function = (route: string): void => {
+		// Screens bigger than 1007px use Portrait mode no Landscape
 		const ww: boolean = window.innerWidth > 1007;
 
 		switch (route) {

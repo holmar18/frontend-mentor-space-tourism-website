@@ -20,7 +20,7 @@ const useNavigationLogic: Function = (): IMobileRet => {
 	/* When links are clicked it will update the route and after updating the route navigate is activated */
 	useEffect(() => {
 		navigate(currRoute);
-	}, [currRoute]);
+	}, [currRoute, navigate]);
 
 	return {
 		mobile: {

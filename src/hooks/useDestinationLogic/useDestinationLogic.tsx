@@ -27,7 +27,7 @@ const useDestinationLogic: Function = (): IDestLogic => {
 	 * switches between the data, runs when currDest state updates
 	 * @param type options [mars, moon, europa, titan]
 	 */
-	const handleData = (type: string) => {
+	const handleData = (type: string): void => {
 		switch (type) {
 			case 'europa':
 				setCurrData(data.destinations[2]);

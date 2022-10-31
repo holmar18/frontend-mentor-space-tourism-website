@@ -23,7 +23,11 @@ const useCrewLogic: Function = (): ICrewLogic => {
 		handleDotClick(currCrew);
 	}, [currCrew]);
 
-	const handleDotClick: Function = (crew: string) => {
+	/**
+	 * switches between data
+	 * @param crew options [hurley, ansari, shuttlewort, glover]
+	 */
+	const handleDotClick: Function = (crew: string): void => {
 		switch (crew) {
 			case 'hurley':
 				setCurrCrewData(data.crew[0]);
