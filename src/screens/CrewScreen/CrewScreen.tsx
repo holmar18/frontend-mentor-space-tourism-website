@@ -4,13 +4,15 @@ import './crewScreen.css';
 import { NavBar } from '../../components/NavBar';
 // constants
 import { crewScreen } from '../../constants/constants';
+// data
+import { crew } from '../../data/navigationData';
 // hooks
-import { useCrewLogic } from '../../hooks/useCrewLogic';
+import { useSubNavigation } from '../../hooks/useSubNavigation';
 // SEO
 import { Helmet } from 'react-helmet';
 
 const CrewScreen: React.FunctionComponent = (): JSX.Element => {
-	const { currCrewData, currImg, currCrew, setCurrCrew } = useCrewLogic();
+	const { currRoute, setCurrRoute, currData, currImg } = useSubNavigation(crew);
 
 	return (
 		<>
@@ -39,9 +41,9 @@ const CrewScreen: React.FunctionComponent = (): JSX.Element => {
 					{/* Information section */}
 					<section className='info-section'>
 						<div className='info-container'>
-							<h4>{currCrewData.role}</h4>
-							<h3>{currCrewData.name}</h3>
-							<p>{currCrewData.bio}</p>
+							<h4>{currData.role}</h4>
+							<h3>{currData.name}</h3>
+							<p>{currData.bio}</p>
 						</div>
 					</section>
 					{/* Information section - END */}
@@ -51,27 +53,27 @@ const CrewScreen: React.FunctionComponent = (): JSX.Element => {
 						<div className='dots-container'>
 							<span
 								className={`dot ${
-									currCrew.charAt(0) === 'h' ? 'dot-active' : ''
+									currRoute.charAt(0) === 'h' ? 'dot-active' : ''
 								}`}
-								onClick={() => setCurrCrew('hurley')}
+								onClick={() => setCurrRoute('hurley')}
 							></span>
 							<span
 								className={`dot ${
-									currCrew.charAt(0) === 's' ? 'dot-active' : ''
+									currRoute.charAt(0) === 's' ? 'dot-active' : ''
 								}`}
-								onClick={() => setCurrCrew('shuttleworth')}
+								onClick={() => setCurrRoute('shuttleworth')}
 							></span>
 							<span
 								className={`dot ${
-									currCrew.charAt(0) === 'g' ? 'dot-active' : ''
+									currRoute.charAt(0) === 'g' ? 'dot-active' : ''
 								}`}
-								onClick={() => setCurrCrew('glover')}
+								onClick={() => setCurrRoute('glover')}
 							></span>
 							<span
 								className={`dot ${
-									currCrew.charAt(0) === 'a' ? 'dot-active' : ''
+									currRoute.charAt(0) === 'a' ? 'dot-active' : ''
 								}`}
-								onClick={() => setCurrCrew('ansari')}
+								onClick={() => setCurrRoute('ansari')}
 							></span>
 						</div>
 					</section>
@@ -80,10 +82,7 @@ const CrewScreen: React.FunctionComponent = (): JSX.Element => {
 					{/* Image section */}
 					<section className='image-section'>
 						<div className='image-container'>
-							<img
-								src={currImg}
-								alt={currCrewData.name + ' ' + currCrewData.role}
-							/>
+							<img src={currImg} alt={currData.name + ' ' + currData.role} />
 						</div>
 					</section>
 					{/* Image section */}

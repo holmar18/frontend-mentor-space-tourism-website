@@ -4,13 +4,17 @@ import './technologyScreen.css';
 import { NavBar } from '../../components/NavBar';
 // Constants
 import { techSreen } from '../../constants/constants';
+// data
+import { technology } from '../../data/navigationData';
 // Hooks
-import { useTechnologyLogic } from '../../hooks/useTechnologyLogic';
+import { useSubNavigation } from '../../hooks/useSubNavigation';
 // SEO
 import { Helmet } from 'react-helmet';
 
 const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
-	const { currRoute, setCurrRoute, currData, currImg } = useTechnologyLogic();
+	const { currRoute, setCurrRoute, currData, currImg } = useSubNavigation(
+		technology()
+	);
 
 	return (
 		<>
@@ -56,7 +60,7 @@ const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
 							className={`btn ${
 								currRoute.charAt(0) === 'c' ? 'btn-active' : ''
 							}`}
-							onClick={() => setCurrRoute('capsule')}
+							onClick={() => setCurrRoute('capsul')}
 						>
 							2
 						</span>

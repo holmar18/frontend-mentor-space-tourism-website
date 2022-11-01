@@ -4,15 +4,17 @@ import './destinationScreen.css';
 import { NavBar } from '../../components/NavBar';
 // Data
 import data from '../../data/data.json';
+import { destination } from '../../data/navigationData';
 // Hooks
-import { useDestinationLogic } from '../../hooks/useDestinationLogic';
+import { useSubNavigation } from '../../hooks/useSubNavigation';
 // Constants
 import { planetsScreen } from '../../constants/constants';
 // SEO
 import { Helmet } from 'react-helmet';
 
 const DestinationScreen: React.FunctionComponent<{}> = (): JSX.Element => {
-	const { currDest, setCurrDest, currData, currImg } = useDestinationLogic();
+	const { currRoute, setCurrRoute, currData, currImg } =
+		useSubNavigation(destination);
 
 	return (
 		<>
@@ -50,33 +52,33 @@ const DestinationScreen: React.FunctionComponent<{}> = (): JSX.Element => {
 						<div className='navigation'>
 							<div
 								className={`nav-item ${
-									currDest === 'moon' ? 'nav-active' : ''
+									currRoute === 'moon' ? 'nav-active' : ''
 								}`}
-								onClick={() => setCurrDest('moon')}
+								onClick={() => setCurrRoute('moon')}
 							>
 								{planetsScreen.moon}
 							</div>
 							<div
 								className={`nav-item ${
-									currDest === 'mars' ? 'nav-active' : ''
+									currRoute === 'mars' ? 'nav-active' : ''
 								}`}
-								onClick={() => setCurrDest('mars')}
+								onClick={() => setCurrRoute('mars')}
 							>
 								{planetsScreen.mars}
 							</div>
 							<div
 								className={`nav-item ${
-									currDest === 'europa' ? 'nav-active' : ''
+									currRoute === 'europa' ? 'nav-active' : ''
 								}`}
-								onClick={() => setCurrDest('europa')}
+								onClick={() => setCurrRoute('europa')}
 							>
 								{planetsScreen.europa}
 							</div>
 							<div
 								className={`nav-item ${
-									currDest === 'titan' ? 'nav-active' : ''
+									currRoute === 'titan' ? 'nav-active' : ''
 								}`}
-								onClick={() => setCurrDest('titan')}
+								onClick={() => setCurrRoute('titan')}
 							>
 								{planetsScreen.titan}
 							</div>
