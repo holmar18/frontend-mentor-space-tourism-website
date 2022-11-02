@@ -1,0 +1,26 @@
+.error-main-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.error-inner-container {
+	width: 20rem;
+	height: 20rem;
+	margin-bottom: 5%;
+}
+
+.error-title {
+	color: var(--color-black);
+}
+
+.error-subtitle {
+	color: var(--color-nav);
+}
+
+.error-icon {
+	color: var(--color-nav);
+	font-size: 10rem;
+}

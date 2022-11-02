@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 interface ISubNavProps {
 	title: Array<string>;
@@ -19,12 +19,12 @@ const useSubNavigation: Function = (props: ISubNavProps): ISubNavRet => {
 	const [currImg, setCurrImg] = useState<string>(props.image[0]);
 
 	useEffect(() => {
-		handleData(currRoute);
+		handleData();
 	}, [currRoute]);
 
-	const handleData = (type: string): void => {
+	const handleData = () => {
 		for (var i = 0; i < props.title.length; i++) {
-			if (props.title[i] === type) {
+			if (props.title[i] === currRoute) {
 				setCurrData(props.data[i]);
 				setCurrImg(props.image[i]);
 				break;

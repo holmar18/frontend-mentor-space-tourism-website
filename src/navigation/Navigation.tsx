@@ -5,6 +5,7 @@ import { HomeScreen } from '../screens/HomeScreen';
 import { CrewScreen } from '../screens/CrewScreen';
 import { DestinationScreen } from '../screens/DestinationScreen';
 import { TechnologyScreen } from '../screens/TechnologyScreen';
+import { ErrorScreen } from '../screens/ErrorScreen';
 
 export interface INavigationProps {}
 
@@ -17,6 +18,7 @@ const Navigation: React.FunctionComponent<INavigationProps> = (props) => {
 				<Route path='/crew' element={<CrewScreen />} />
 				<Route path='/destination' element={<DestinationScreen />} />
 				<Route path='/tech' element={<TechnologyScreen />} />
+				<Route path='*' element={<ErrorScreen />} />
 			</Routes>
 		</BrowserRouter>
 	);

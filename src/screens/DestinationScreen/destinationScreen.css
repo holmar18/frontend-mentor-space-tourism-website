@@ -65,10 +65,6 @@
 	animation: Fade 1s linear;
 }
 
-.pick-dest-container b {
-	opacity: 0.25;
-}
-
 .description {
 	text-align: center;
 	width: 80%;
@@ -130,10 +126,6 @@
 		text-align: center;
 	}
 
-	.pick-dest-container h5 {
-		font-size: 1rem;
-	}
-
 	.title {
 		font-size: 3.5rem;
 	}
@@ -171,10 +163,6 @@
 		width: 18rem;
 		height: 18rem;
 		margin: 0 auto;
-	}
-
-	.pick-dest-container h5 {
-		font-size: 1.3rem;
 	}
 
 	.title {

@@ -1,0 +1,31 @@
+.page-title b {
+	opacity: 0.25 !important;
+}
+
+/*
+########################## MOBILE ##########################
+*/
+@media only screen and (max-width: 640px) {
+	.page-title {
+		font-size: 1rem;
+	}
+}
+
+/*
+######################### TABLET ##########################
+*/
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+	.page-title {
+		font-size: 1rem;
+	}
+}
+
+/*
+########################## DESKTOP ##########################
+*/
+@media only screen and (min-width: 1008px) {
+	.page-title {
+		margin-right: auto;
+		font-size: 1.75rem;
+	}
+}

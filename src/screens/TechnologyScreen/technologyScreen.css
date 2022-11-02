@@ -11,14 +11,6 @@
 	animation: Fade 1.5s linear;
 }
 
-.title-section-tech b {
-	opacity: 0.25;
-}
-
-.title-section-tech h5 {
-	text-transform: uppercase;
-}
-
 .text-section-tech h3,
 .subheader-tech {
 	text-transform: uppercase;
@@ -78,11 +70,6 @@
 
 	.title-section-tech {
 		margin-bottom: 6%;
-	}
-
-	.title-section-tech h5 {
-		font-size: 1rem;
-		letter-spacing: 2.35px;
 	}
 
 	.text-section-tech {
