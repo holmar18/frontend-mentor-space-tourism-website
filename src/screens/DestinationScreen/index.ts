@@ -1,2 +1,2 @@
 import DestinationScreen from './DestinationScreen';
-export { DestinationScreen };
+export default DestinationScreen;

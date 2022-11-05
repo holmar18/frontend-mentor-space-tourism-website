@@ -3,7 +3,7 @@ import './errorScreen.css';
 
 import { TbError404 } from 'react-icons/tb';
 
-const ErrorScreen = () => {
+const NotFoundScreen = () => {
 	return (
 		<div className='error-main-container'>
 			<div className='error-inner-container'>
@@ -17,4 +17,4 @@ const ErrorScreen = () => {
 	);
 };
 
-export default ErrorScreen;
+export default NotFoundScreen;

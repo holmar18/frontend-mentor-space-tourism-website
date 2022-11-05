@@ -3,7 +3,7 @@ import './destinationScreen.css';
 // Components
 import { NavBar } from '../../components/NavBar';
 import { PageTitle } from '../../components/PageTitle';
-import { ErrorBoundaries } from '../../components/ErrorBoundaries';
+import ErrorBoundaries from '../../components/ErrorBoundaries';
 // Data
 import data from '../../data/data.json';
 import { destination } from '../../data/navigationData';

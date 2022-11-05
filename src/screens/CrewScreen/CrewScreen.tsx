@@ -3,7 +3,7 @@ import './crewScreen.css';
 // Components
 import { NavBar } from '../../components/NavBar';
 import { PageTitle } from '../../components/PageTitle';
-import { ErrorBoundaries } from '../../components/ErrorBoundaries';
+import ErrorBoundaries from '../../components/ErrorBoundaries';
 // constants
 import { crewScreen } from '../../constants/constants';
 // data

@@ -1,2 +1,2 @@
 import CrewScreen from './CrewScreen';
-export { CrewScreen };
+export default CrewScreen;

@@ -1,2 +1,2 @@
 import TechnologyScreen from './TechnologyScreen';
-export { TechnologyScreen };
+export default TechnologyScreen;

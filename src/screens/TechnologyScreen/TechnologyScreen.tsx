@@ -3,7 +3,7 @@ import './technologyScreen.css';
 // Components
 import { NavBar } from '../../components/NavBar';
 import { PageTitle } from '../../components/PageTitle';
-import { ErrorBoundaries } from '../../components/ErrorBoundaries';
+import ErrorBoundaries from '../../components/ErrorBoundaries';
 // Constants
 import { techSreen } from '../../constants/constants';
 // data

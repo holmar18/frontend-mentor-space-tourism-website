@@ -2,7 +2,7 @@ import React from 'react';
 import './homeScreen.css';
 // Components
 import { NavBar } from '../../components/NavBar';
-import { ErrorBoundaries } from '../../components/ErrorBoundaries';
+import ErrorBoundaries from '../../components/ErrorBoundaries';
 // data
 import data from '../../data/data.json';
 // SEO
