@@ -1,4 +1,16 @@
-# Frontend Mentor - Space tourism multi-page website
+## Frontend Mentor - Space tourism multi-page website
+
+---
+
+#### Running the project
+
+**Install** `npm install`
+
+**Start** `npm start`
+
+**Unit** tests `npm run test`
+
+**E2E tests** Need to run `npm start` before beeing able to run command below `npm run cypress:open`
 
 ---
 

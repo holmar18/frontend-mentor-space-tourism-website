@@ -47,7 +47,7 @@ const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
 						{/* Section buttons */}
 						<section className='btn-section-tech'>
 							{/* Sub navigation */}
-							{TECH.map((route) => {
+							{TECH.map((route, index) => {
 								return (
 									<span
 										className={`btn ${
@@ -57,7 +57,7 @@ const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
 										}`}
 										onClick={() => setCurrRoute(route)}
 									>
-										1
+										{index + 1}
 									</span>
 								);
 							})}
