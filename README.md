@@ -10,7 +10,7 @@
 
 **Unit** tests `npm run test`
 
-**E2E tests** Need to run `npm start` before beeing able to run command below `npm run cypress:open`
+**E2E tests** Need to run `npm start` before beeing able to run  `npm run cypress:open`
 
 ---
 
