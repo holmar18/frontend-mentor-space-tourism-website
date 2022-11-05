@@ -14,6 +14,8 @@ import { planetsScreen } from '../../constants/constants';
 // SEO
 import { Helmet } from 'react-helmet';
 
+const PLANETS = ['moon', 'mars', 'europa', 'titan'];
+
 const DestinationScreen: React.FunctionComponent<{}> = (): JSX.Element => {
 	const { currRoute, setCurrRoute, currData, currImg } =
 		useSubNavigation(destination);
@@ -53,38 +55,18 @@ const DestinationScreen: React.FunctionComponent<{}> = (): JSX.Element => {
 						<section>
 							{/* Navigation */}
 							<div className='navigation'>
-								<div
-									className={`nav-item ${
-										currRoute === 'moon' ? 'nav-active' : ''
-									}`}
-									onClick={() => setCurrRoute('moon')}
-								>
-									{planetsScreen.moon}
-								</div>
-								<div
-									className={`nav-item ${
-										currRoute === 'mars' ? 'nav-active' : ''
-									}`}
-									onClick={() => setCurrRoute('mars')}
-								>
-									{planetsScreen.mars}
-								</div>
-								<div
-									className={`nav-item ${
-										currRoute === 'europa' ? 'nav-active' : ''
-									}`}
-									onClick={() => setCurrRoute('europa')}
-								>
-									{planetsScreen.europa}
-								</div>
-								<div
-									className={`nav-item ${
-										currRoute === 'titan' ? 'nav-active' : ''
-									}`}
-									onClick={() => setCurrRoute('titan')}
-								>
-									{planetsScreen.titan}
-								</div>
+								{PLANETS.map((route) => {
+									return (
+										<div
+											className={`nav-item ${
+												currRoute === route ? 'nav-active' : ''
+											}`}
+											onClick={() => setCurrRoute(route)}
+										>
+											{planetsScreen[`${route as keyof unknown}`]}
+										</div>
+									);
+								})}
 							</div>
 							{/* Navigation - END */}
 

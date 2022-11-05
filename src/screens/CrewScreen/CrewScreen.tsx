@@ -13,6 +13,8 @@ import { useSubNavigation } from '../../hooks/useSubNavigation';
 // SEO
 import { Helmet } from 'react-helmet';
 
+const ROUTES = ['hurley', 'shuttleworth', 'glover', 'ansari'];
+
 const CrewScreen: React.FunctionComponent = (): JSX.Element => {
 	const { currRoute, setCurrRoute, currData, currImg } = useSubNavigation(crew);
 
@@ -48,36 +50,24 @@ const CrewScreen: React.FunctionComponent = (): JSX.Element => {
 						</section>
 						{/* Information section - END */}
 
-						{/* Dots section */}
+						{/* Sub navigation Dots */}
 						<section className='dots-section'>
 							<div className='dots-container'>
-								<span
-									className={`dot ${
-										currRoute.charAt(0) === 'h' ? 'dot-active' : ''
-									}`}
-									onClick={() => setCurrRoute('hurley')}
-								></span>
-								<span
-									className={`dot ${
-										currRoute.charAt(0) === 's' ? 'dot-active' : ''
-									}`}
-									onClick={() => setCurrRoute('shuttleworth')}
-								></span>
-								<span
-									className={`dot ${
-										currRoute.charAt(0) === 'g' ? 'dot-active' : ''
-									}`}
-									onClick={() => setCurrRoute('glover')}
-								></span>
-								<span
-									className={`dot ${
-										currRoute.charAt(0) === 'a' ? 'dot-active' : ''
-									}`}
-									onClick={() => setCurrRoute('ansari')}
-								></span>
+								{ROUTES.map((route) => {
+									return (
+										<span
+											className={`dot ${
+												currRoute.charAt(0) === route.charAt(0)
+													? 'dot-active'
+													: ''
+											}`}
+											onClick={() => setCurrRoute(route)}
+										></span>
+									);
+								})}
 							</div>
 						</section>
-						{/* Dots section - END */}
+						{/* Sub navigation Dots - END */}
 
 						{/* Image section */}
 						<section className='image-section'>

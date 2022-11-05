@@ -13,6 +13,8 @@ import { useSubNavigation } from '../../hooks/useSubNavigation';
 // SEO
 import { Helmet } from 'react-helmet';
 
+const TECH = ['vehicle', 'capsul', 'spaceport'];
+
 const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
 	const { currRoute, setCurrRoute, currData, currImg } = useSubNavigation(
 		technology()
@@ -44,38 +46,22 @@ const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
 
 						{/* Section buttons */}
 						<section className='btn-section-tech'>
-							{/* button 1 */}
-							<span
-								className={`btn ${
-									currRoute.charAt(0) === 'v' ? 'btn-active' : ''
-								}`}
-								onClick={() => setCurrRoute('vehicle')}
-							>
-								1
-							</span>
-							{/* button 1 - END */}
-
-							{/* button 2 */}
-							<span
-								className={`btn ${
-									currRoute.charAt(0) === 'c' ? 'btn-active' : ''
-								}`}
-								onClick={() => setCurrRoute('capsul')}
-							>
-								2
-							</span>
-							{/* button 2 - END */}
-
-							{/* button 3 */}
-							<span
-								className={`btn ${
-									currRoute.charAt(0) === 's' ? 'btn-active' : ''
-								}`}
-								onClick={() => setCurrRoute('spaceport')}
-							>
-								3
-							</span>
-							{/* button 3 - END */}
+							{/* Sub navigation */}
+							{TECH.map((route) => {
+								return (
+									<span
+										className={`btn ${
+											currRoute.charAt(0) === route.charAt(0)
+												? 'btn-active'
+												: ''
+										}`}
+										onClick={() => setCurrRoute(route)}
+									>
+										1
+									</span>
+								);
+							})}
+							{/* Sub navigation - END */}
 						</section>
 						{/* Section buttons */}
 
