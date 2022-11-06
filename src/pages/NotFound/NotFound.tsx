@@ -1,9 +1,9 @@
 import React from 'react';
-import './errorScreen.css';
+import './notFound.css';
 
 import { TbError404 } from 'react-icons/tb';
 
-const NotFoundScreen = () => {
+const NotFound = () => {
 	return (
 		<div className='error-main-container'>
 			<div className='error-inner-container'>
@@ -17,4 +17,4 @@ const NotFoundScreen = () => {
 	);
 };
 
-export default NotFoundScreen;
+export default NotFound;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
 // Constants
-import { nav } from '../../constants/constants';
+import { NAV } from '../../constants/constants';
 // Logo
 import logo from '../../assets/shared/logo.svg';
 import mobilemenu from '../../assets/shared/icon-hamburger.svg';
@@ -72,7 +72,7 @@ const NavBar: React.FunctionComponent<INavBarProps> = ({
 						onClick={() => route.setRoute('/home')}
 					>
 						<b>00 </b>
-						{nav.links.home}
+						{NAV.links.home}
 					</div>
 					{/* Link home - END  */}
 
@@ -82,7 +82,7 @@ const NavBar: React.FunctionComponent<INavBarProps> = ({
 						onClick={() => route.setRoute('/destination')}
 					>
 						<b>01 </b>
-						{nav.links.dest}
+						{NAV.links.dest}
 					</div>
 					{/* Link destination - END */}
 
@@ -92,7 +92,7 @@ const NavBar: React.FunctionComponent<INavBarProps> = ({
 						onClick={() => route.setRoute('/crew')}
 					>
 						<b>02 </b>
-						{nav.links.crew}
+						{NAV.links.crew}
 					</div>
 					{/* Link Crew - END */}
 
@@ -102,7 +102,7 @@ const NavBar: React.FunctionComponent<INavBarProps> = ({
 						onClick={() => route.setRoute('/tech')}
 					>
 						<b>03 </b>
-						{nav.links.tech}
+						{NAV.links.tech}
 					</div>
 					{/* Link Technology - END */}
 				</div>

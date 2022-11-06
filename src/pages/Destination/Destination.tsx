@@ -1,22 +1,22 @@
 import React from 'react';
-import './destinationScreen.css';
+import './destination.css';
 // Components
 import { NavBar } from '../../components/NavBar';
 import { PageTitle } from '../../components/PageTitle';
 import ErrorBoundaries from '../../components/ErrorBoundaries';
 // Data
 import data from '../../data/data.json';
-import { destination } from '../../data/navigationData';
+import { destination } from '../../data/data';
 // Hooks
 import { useSubNavigation } from '../../hooks/useSubNavigation';
 // Constants
-import { planetsScreen } from '../../constants/constants';
+import { PLANETS } from '../../constants/constants';
 // SEO
 import { Helmet } from 'react-helmet';
 
-const PLANETS = ['moon', 'mars', 'europa', 'titan'];
+const ROUTES = ['moon', 'mars', 'europa', 'titan'];
 
-const DestinationScreen: React.FunctionComponent<{}> = (): JSX.Element => {
+const Destination: React.FunctionComponent<{}> = (): JSX.Element => {
 	const { currRoute, setCurrRoute, currData, currImg } =
 		useSubNavigation(destination);
 
@@ -55,7 +55,7 @@ const DestinationScreen: React.FunctionComponent<{}> = (): JSX.Element => {
 						<section>
 							{/* Navigation */}
 							<div className='navigation'>
-								{PLANETS.map((route) => {
+								{ROUTES.map((route) => {
 									return (
 										<div
 											className={`nav-item ${
@@ -63,7 +63,7 @@ const DestinationScreen: React.FunctionComponent<{}> = (): JSX.Element => {
 											}`}
 											onClick={() => setCurrRoute(route)}
 										>
-											{planetsScreen[`${route as keyof unknown}`]}
+											{PLANETS[`${route as keyof unknown}`]}
 										</div>
 									);
 								})}
@@ -81,14 +81,14 @@ const DestinationScreen: React.FunctionComponent<{}> = (): JSX.Element => {
 							<div className='dist-time-container'>
 								{/* Distance */}
 								<div className='dist-time-item'>
-									<p className='subheading-one'>{planetsScreen.dist}</p>
+									<p className='subheading-one'>{PLANETS.dist}</p>
 									<p className='subheading-two'>{currData.distance}</p>
 								</div>
 								{/* Distance - END */}
 
 								{/* Time */}
 								<div className='dist-time-item'>
-									<p className='subheading-one'>{planetsScreen.time}</p>
+									<p className='subheading-one'>{PLANETS.time}</p>
 									<p className='subheading-two'>{currData.travel}</p>
 								</div>
 								{/* Time - END */}
@@ -105,4 +105,4 @@ const DestinationScreen: React.FunctionComponent<{}> = (): JSX.Element => {
 	);
 };
 
-export default DestinationScreen;
+export default Destination;

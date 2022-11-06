@@ -1,4 +1,4 @@
-const nav = {
+const NAV = {
 	links: {
 		home: 'Home',
 		dest: 'Destination',
@@ -7,7 +7,7 @@ const nav = {
 	},
 };
 
-const planetsScreen = {
+const PLANETS = {
 	mars: 'MARS',
 	moon: 'MOON',
 	europa: 'EUROPA',
@@ -16,13 +16,13 @@ const planetsScreen = {
 	time: 'EST. TRAVEL TIME',
 };
 
-const crewScreen = {
+const CREW = {
 	meetTitle: 'MEET THE CREW',
 };
 
-const techSreen = {
+const TECHNOLOGY = {
 	title: 'space lunch 101',
 	subheading: 'the terminology',
 };
 
-export { nav, planetsScreen, crewScreen, techSreen };
+export { NAV, PLANETS, CREW, TECHNOLOGY };

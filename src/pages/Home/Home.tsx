@@ -1,5 +1,5 @@
 import React from 'react';
-import './homeScreen.css';
+import './home.css';
 // Components
 import { NavBar } from '../../components/NavBar';
 import ErrorBoundaries from '../../components/ErrorBoundaries';
@@ -8,7 +8,7 @@ import data from '../../data/data.json';
 // SEO
 import { Helmet } from 'react-helmet';
 
-const HomeScreen: React.FunctionComponent<{}> = (): JSX.Element => {
+const Home: React.FunctionComponent<{}> = (): JSX.Element => {
 	return (
 		<>
 			<ErrorBoundaries>
@@ -64,4 +64,4 @@ const HomeScreen: React.FunctionComponent<{}> = (): JSX.Element => {
 	);
 };
 
-export default HomeScreen;
+export default Home;

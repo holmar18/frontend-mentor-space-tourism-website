@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
-import './loadingScreen.css';
+import './loading.css';
 
-const LoadingScreen: FunctionComponent = (): JSX.Element => {
+const Loading: FunctionComponent = (): JSX.Element => {
 	return (
 		<div className='main'>
 			<section className='waviy'>
@@ -11,4 +11,4 @@ const LoadingScreen: FunctionComponent = (): JSX.Element => {
 	);
 };
 
-export default LoadingScreen;
+export default Loading;

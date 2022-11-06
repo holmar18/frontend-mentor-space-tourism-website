@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import HomeScreen from './HomeScreen';
+import HomeScreen from './Home';
 
 // Mocked react navigation
 const mockedUsedNavigate = jest.fn();

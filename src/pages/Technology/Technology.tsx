@@ -1,13 +1,13 @@
 import React from 'react';
-import './technologyScreen.css';
+import './technology.css';
 // Components
 import { NavBar } from '../../components/NavBar';
 import { PageTitle } from '../../components/PageTitle';
 import ErrorBoundaries from '../../components/ErrorBoundaries';
 // Constants
-import { techSreen } from '../../constants/constants';
+import { TECHNOLOGY } from '../../constants/constants';
 // data
-import { technology } from '../../data/navigationData';
+import { technology } from '../../data/data';
 // Hooks
 import { useSubNavigation } from '../../hooks/useSubNavigation';
 // SEO
@@ -15,7 +15,7 @@ import { Helmet } from 'react-helmet';
 
 const TECH = ['vehicle', 'capsul', 'spaceport'];
 
-const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
+const Technology: React.FunctionComponent = (): JSX.Element => {
 	const { currRoute, setCurrRoute, currData, currImg } = useSubNavigation(
 		technology()
 	);
@@ -34,7 +34,7 @@ const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
 					<div className='content-container-tech'>
 						{/* Section Space lunch */}
 						<section className='title-section-tech'>
-							<PageTitle num={'03 '} title={techSreen.title} />
+							<PageTitle num={'03 '} title={TECHNOLOGY.title} />
 						</section>
 						{/* Section Space lunch - END */}
 
@@ -67,7 +67,7 @@ const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
 
 						{/* Section information */}
 						<section className='text-section-tech'>
-							<p className='subheader-tech'>{techSreen.subheading}</p>
+							<p className='subheader-tech'>{TECHNOLOGY.subheading}</p>
 							<h3>{currData.name}</h3>
 							<p className='tech-description'>{currData.description}</p>
 						</section>
@@ -81,4 +81,4 @@ const TechnologyScreen: React.FunctionComponent = (): JSX.Element => {
 	);
 };
 
-export default TechnologyScreen;
+export default Technology;

@@ -1,13 +1,13 @@
 import React from 'react';
-import './crewScreen.css';
+import './crew.css';
 // Components
 import { NavBar } from '../../components/NavBar';
 import { PageTitle } from '../../components/PageTitle';
 import ErrorBoundaries from '../../components/ErrorBoundaries';
 // constants
-import { crewScreen } from '../../constants/constants';
+import { CREW } from '../../constants/constants';
 // data
-import { crew } from '../../data/navigationData';
+import { crew } from '../../data/data';
 // hooks
 import { useSubNavigation } from '../../hooks/useSubNavigation';
 // SEO
@@ -15,7 +15,7 @@ import { Helmet } from 'react-helmet';
 
 const ROUTES = ['hurley', 'shuttleworth', 'glover', 'ansari'];
 
-const CrewScreen: React.FunctionComponent = (): JSX.Element => {
+const Crew: React.FunctionComponent = (): JSX.Element => {
 	const { currRoute, setCurrRoute, currData, currImg } = useSubNavigation(crew);
 
 	return (
@@ -36,7 +36,7 @@ const CrewScreen: React.FunctionComponent = (): JSX.Element => {
 					<div className='crew-content-container'>
 						{/* Meet crew title */}
 						<section className='meet-crew-container'>
-							<PageTitle num={'02 '} title={crewScreen.meetTitle} />
+							<PageTitle num={'02 '} title={CREW.meetTitle} />
 						</section>
 						{/* Meet crew title - END */}
 
@@ -85,4 +85,4 @@ const CrewScreen: React.FunctionComponent = (): JSX.Element => {
 	);
 };
 
-export default CrewScreen;
+export default Crew;
