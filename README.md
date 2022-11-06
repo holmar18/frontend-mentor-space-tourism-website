@@ -10,11 +10,7 @@
 
 **Unit** tests `npm run test`
 
-<<<<<<< HEAD
-**E2E tests** Need to run `npm start` before beeing able to run command `npm run cypress:open`
-=======
 **E2E tests** Need to run `npm start` before beeing able to run  `npm run cypress:open`
->>>>>>> 81c1ccc28389dc7dc7f808a187180a6950392889
 
 ---
 
